@@ -1,0 +1,560 @@
+<html>
+<head>
+<title>CogniSafe3D_project Documentation</title>
+<meta NAME="Description" Content="Project Documentation">
+</head>
+<body TEXT="black" BGCOLOR="white" LINK="blue" ALINK="red" VLINK="indigo" BACKGROUND="" >
+
+<p>
+<B>Model: CogniSafe3D_model</B>
+<br />
+<img USEMAP="#ImageMap.CogniSafe3D_model" type="image/svg+xml" src="CogniSafe3D_model.png" height="1311" width="2808"></img>
+</p>
+<MAP NAME="ImageMap.CogniSafe3D_model">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.CATASTROPHIC_STATE" COORDS="2622,321 2642,341">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.CW_True_Negative_Misalignment" COORDS="1475,825 1495,845">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.CW_True_Positive_Misalignment" COORDS="1465,1025 1485,1045">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.CW_False_Positive_Misalignment" COORDS="1475,915 1495,935">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.PCAD_False_Negative" COORDS="875,775 895,795">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.PC_altered" COORDS="435,695 455,715">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.JS_altered" COORDS="475,1045 495,1065">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.RP_altered" COORDS="1115,1075 1135,1095">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.RP_correct" COORDS="1105,865 1125,885">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.JS_correct" COORDS="475,875 495,895">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.PCAD_True_Positive" COORDS="865,635 885,655">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.SAFE_STATE" COORDS="2414,633 2434,653">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.PC_correct" COORDS="443,425 463,445">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.PCAD_False_Positive" COORDS="845,485 865,505">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.PCAD_True_Negative" COORDS="845,385 865,405">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.Dangerous_Scenario" COORDS="317,299 337,319">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.Safe_Scenario" COORDS="317,179 337,199">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.CONTINUE_STATE" COORDS="2284,1166 2304,1186">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.JS_loaded" COORDS="245,955 265,975">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.Safety_Monitoring_working" COORDS="569,1181 589,1201">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.Safety_Monitoring_notWorking" COORDS="563,1277 583,1297">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.Safety_Monitoring_loaded" COORDS="227,1223 247,1243">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.System_Loaded" COORDS="53,431 73,451">
+<AREA SHAPE="rect" HREF="#Place.CogniSafe3D_model.PC_generated" COORDS="225,545 245,565">
+<AREA SHAPE="rect" HREF="#Input Gate.CogniSafe3D_model.PCAD_TN_or_FN_JS_altered" COORDS="635,905 655,925">
+<AREA SHAPE="rect" HREF="#Input Gate.CogniSafe3D_model.PCAD_TN_or_FN_JS_correct" COORDS="625,995 645,1015">
+<AREA SHAPE="rect" HREF="#Input Gate.CogniSafe3D_model.Scenario_is_safe" COORDS="605,179 625,199">
+<AREA SHAPE="rect" HREF="#Input Gate.CogniSafe3D_model.Scenario_is_Dangerous" COORDS="599,299 619,319">
+<AREA SHAPE="rect" HREF="#Output Gate.CogniSafe3D_model.Reset_System" COORDS="2570,1166 2590,1186">
+<AREA SHAPE="rect" HREF="#Timed Activity.CogniSafe3D_model.LiDAR_PC_emission" COORDS="122,540 128,570">
+<AREA SHAPE="rect" HREF="#Timed Activity.CogniSafe3D_model.Waiting_for_restore" COORDS="2551,628 2557,658">
+<AREA SHAPE="rect" HREF="#Timed Activity.CogniSafe3D_model.Cycle" COORDS="2769,317 2775,347">
+<AREA SHAPE="rect" HREF="#Timed Activity.CogniSafe3D_model.Restore" COORDS="2447,1161 2453,1191">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.CW_True_Positive_Safe_Failure" COORDS="1724,1020 1727,1050">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.CW_False_Positive_Safe_Failure" COORDS="1724,910 1727,940">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PointCloud_Anomaly_Detection_when_PC_altered" COORDS="691,690 700,720">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.CalibrationWatchdog_RP_correct" COORDS="1291,860 1300,890">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.CalibrationWatchdog_RP_altered" COORDS="1304,1070 1307,1100">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PCAD_True_Positive_Safe_Failure" COORDS="1083,629 1086,659">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PC_corr_JS_alt_RP_generation" COORDS="854,900 857,930">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PC_corr_JS_corr_RP_generation" COORDS="851,990 860,1020">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PCAD_False_Positive_Safe_Failure" COORDS="1064,480 1067,510">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PointCloud_Anomaly_Detection_when_PC_not_altered" COORDS="691,420 700,450">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.Safety_Monitoring" COORDS="383,1218 392,1248">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.Cobot_Driver_JS_Emission" COORDS="381,950 390,980">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PCAD_TN_Safety_Monitoring_working_in_Safe_Scenario" COORDS="2202,1226 2205,1256">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PCAD_TN_Safety_Monitoring_working_in_Dangerous_Scenario" COORDS="2176,654 2179,684">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PCAD_TN_Safety_Monitoring_not_working_in_Safe_Scenario" COORDS="2176,758 2179,788">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PCAD_TN_Safety_Monitoring_not_working_in_Dangerous_Scenario" COORDS="2293,212 2296,242">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PCAD_FN_Safety_Monitoring_working_in_Safe_Scenario" COORDS="2189,1109 2192,1139">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PCAD_FN_Safety_Monitoring_working_in_Dangerous_Scenario" COORDS="2293,316 2296,346">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PCAD_FN_Safety_Monitoring_not_working_in_Safe_Scenario" COORDS="2176,836 2179,866">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PCAD_FN_Safety_Monitoring_not_working_in_Dangerous_Scenario" COORDS="2293,407 2296,437">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.CogniSafe3D_model.PC_correctness" COORDS="341,540 350,570">
+</MAP>
+
+<p>
+<B>Note on the study setup.</B><br />
+The model documented above (<i>CogniSafe3D_model</i>) is the only SAN model of the project that is described here.
+For simplicity, the reward variables and the whole study (range studies and performance variables) have been conducted
+<B>in parallel on this same model</B>, using two copies of it that differ only in name and in the initial marking of the scenario places:
+</p>
+<ul>
+<li><i>CogniSafe3D_model_safeScenario</i>: initial marking <code>Safe_Scenario = 1</code> (and <code>Dangerous_Scenario = 0</code>). It is used to evaluate the availability of the system through the reward <code>safe_state</code> (reward model <i>Reward_Availability</i>), i.e. the steady-state probability of SAFE_STATE.</li>
+<li><i>CogniSafe3D_model_dangerousScenario</i>: initial marking <code>Dangerous_Scenario = 1</code> (and <code>Safe_Scenario = 0</code>). It is used to evaluate safety through the reward <code>catastrophic_state</code> (reward model <i>Reward_Safety</i>), i.e. the steady-state probability of CATASTROPHIC_STATE.</li>
+</ul>
+<p>
+The scenario remains the same for the whole execution, so each copy only keeps the part of the model that is reachable under its own scenario
+(e.g. the copies only contain the activities, gates and places relevant for that scenario).
+The structure, the case probabilities and the gates are otherwise identical to those of <i>CogniSafe3D_model</i>. The range studies and reward tables below are reported exactly as defined in the project, so they refer to the copies by their names (<i>CogniSafe3D_model_safeScenario</i> and <i>CogniSafe3D_model_dangerousScenario</i>), which are the same model as <i>CogniSafe3D_model</i> described above.
+</p>
+
+<p>
+<table border="1"CELLSPACING="0" >
+<caption align="Top"><font size="2"><B><font color="black">Place Attributes and Descriptions</font></B>: </caption>
+<tr ><th width="200" > <font size="2"><B>Place Names</B></th><th width="100" > <font size="2"><B>Initial Markings</B></th><th width="550" > <font size="2"><B>Description</B></th></tr>
+
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.Safe_Scenario" >Safe_Scenario</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">The scenario is not hazardous; no criticalities are present.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.Dangerous_Scenario" >Dangerous_Scenario</a></font></td><td > <font size="2"><center>1</center></td><td > <font size="2">The scenario is hazardous; criticalities are present. This is the opposite of Safe_Scenario.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.System_Loaded" >System_Loaded</a></font></td><td > <font size="2"><center>1</center></td><td > <font size="2">The system is ready to be executed.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.PC_generated" >PC_generated</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">Point clouds (PCs) are generated.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.PC_correct" >PC_correct</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">PCs are generated and the whole path from the LiDAR to the processing has not affected the correctness of it.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.PC_altered" >PC_altered</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">Opposite meaning of PC_correct.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.PCAD_True_Negative" >PCAD_True_Negative</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">The evaluation of the Point Cloud Anomaly Detection returned a True Negative.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.PCAD_False_Positive" >PCAD_False_Positive</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">The evaluation of the Point Cloud Anomaly Detection returned a False Positive.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.PCAD_True_Positive" >PCAD_True_Positive</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">The evaluation of the Point Cloud Anomaly Detection returned a True Positive.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.PCAD_False_Negative" >PCAD_False_Negative</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">The evaluation of the Point Cloud Anomaly Detection returned a False Negative.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.JS_loaded" >JS_loaded</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">JS data are generated and transmitted to the CogniSafe3D processing unit.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.JS_correct" >JS_correct</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">JS received by the CogniSafe3D's processing unit has not been affected by alterations.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.JS_altered" >JS_altered</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">Opposite meaning of JS_correct.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.RP_correct" >RP_correct</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">The Extrinsic Calibration has generated a correct Robot Pose, despite the inputs.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.RP_altered" >RP_altered</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">Opposite meaning of RP_correct.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.CW_True_Negative_Misalignment" >CW_True_Negative_Misalignment</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">The Calibration Watchdog correctly says that the system is properly calibrated.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.CW_False_Positive_Misalignment" >CW_False_Positive_Misalignment</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">The Calibration Watchdog has recognized an un-calibration in the system where there is not one.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.CW_True_Positive_Misalignment" >CW_True_Positive_Misalignment</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">The Calibration Watchdog has recognized properly an un-calibration in the system.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.Safety_Monitoring_loaded" >Safety_Monitoring_loaded</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">The Safety Monitoring is ready to be executed.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.Safety_Monitoring_working" >Safety_Monitoring_working</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">Probabilistically, with independent choice with respect to the previous execution, the Safety Monitoring is working properly.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.Safety_Monitoring_notWorking" >Safety_Monitoring_notWorking</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">Opposite meaning of Safety_Monitoring_working.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.CONTINUE_STATE" >CONTINUE_STATE</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">This state is the normal operation of the system, in which the PCs are captured at 10Hz and an evaluation of the risk of the scenario is properly carried out and no risks are currently happening.</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.SAFE_STATE" >SAFE_STATE</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">System state reached when CogniSafe3D does not emit the safety heartbeat (HB).</td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.CogniSafe3D_model.CATASTROPHIC_STATE" >CATASTROPHIC_STATE</a></font></td><td > <font size="2"><center>0</center></td><td > <font size="2">System state reached when faults/alterations go undetected, or the scenario risk is not properly evaluated, so the safety HB is sent even when it should not be.</td></tr>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.CogniSafe3D_model.Cycle" ><B>Cycle</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+1
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.CogniSafe3D_model.LiDAR_PC_emission" ><B>LiDAR_PC_emission</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+1
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.CogniSafe3D_model.Restore" ><B>Restore</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+1
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.CogniSafe3D_model.Waiting_for_restore" ><B>Waiting_for_restore</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+1
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Instantaneous Activity:</th><th width="500" > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.CalibrationWatchdog_RP_correct" >CalibrationWatchdog_RP_correct</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+p_CW_correctly_not_detect_misalignment
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+1-p_CW_correctly_not_detect_misalignment
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Instantaneous Activity:</th><th width="500" > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.Cobot_Driver_JS_Emission" >Cobot_Driver_JS_Emission</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+p_Cobot_Driver_JS_correct_emission
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+1-p_Cobot_Driver_JS_correct_emission
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Instantaneous Activity:</th><th width="500" > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PC_corr_JS_corr_RP_generation" >PC_corr_JS_corr_RP_generation</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+p_RP_correct_generation_with_PC_and_JS_correct
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+1-p_RP_correct_generation_with_PC_and_JS_correct
+
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Instantaneous Activity:</th><th width="500" > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PC_correctness" >PC_correctness</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+p_LiDAR_PC_correct_emission
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+1-p_LiDAR_PC_correct_emission
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Instantaneous Activity:</th><th width="500" > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PointCloud_Anomaly_Detection_when_PC_altered" >PointCloud_Anomaly_Detection_when_PC_altered</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+p_PC_anomaly_correctly_detected
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+1-p_PC_anomaly_correctly_detected
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Instantaneous Activity:</th><th width="500" > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PointCloud_Anomaly_Detection_when_PC_not_altered" >PointCloud_Anomaly_Detection_when_PC_not_altered</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+p_PCAD_correctly_working
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+1-p_PCAD_correctly_working
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Instantaneous Activity:</th><th width="500" > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.Safety_Monitoring" >Safety_Monitoring</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+p_Safety_Monitoring_correctly_working
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+1-p_Safety_Monitoring_correctly_working
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="650" > <font size="2"><font color="black">Instantaneous Activities Without Cases: </font></th></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.CW_False_Positive_Safe_Failure" >CW_False_Positive_Safe_Failure</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.CW_True_Positive_Safe_Failure" >CW_True_Positive_Safe_Failure</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.CalibrationWatchdog_RP_altered" >CalibrationWatchdog_RP_altered</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PCAD_FN_Safety_Monitoring_not_working_in_Dangerous_Scenario" >PCAD_FN_Safety_Monitoring_not_working_in_Dangerous_Scenario</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PCAD_FN_Safety_Monitoring_not_working_in_Safe_Scenario" >PCAD_FN_Safety_Monitoring_not_working_in_Safe_Scenario</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PCAD_FN_Safety_Monitoring_working_in_Dangerous_Scenario" >PCAD_FN_Safety_Monitoring_working_in_Dangerous_Scenario</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PCAD_FN_Safety_Monitoring_working_in_Safe_Scenario" >PCAD_FN_Safety_Monitoring_working_in_Safe_Scenario</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PCAD_False_Positive_Safe_Failure" >PCAD_False_Positive_Safe_Failure</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PCAD_TN_Safety_Monitoring_not_working_in_Dangerous_Scenario" >PCAD_TN_Safety_Monitoring_not_working_in_Dangerous_Scenario</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PCAD_TN_Safety_Monitoring_not_working_in_Safe_Scenario" >PCAD_TN_Safety_Monitoring_not_working_in_Safe_Scenario</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PCAD_TN_Safety_Monitoring_working_in_Dangerous_Scenario" >PCAD_TN_Safety_Monitoring_working_in_Dangerous_Scenario</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PCAD_TN_Safety_Monitoring_working_in_Safe_Scenario" >PCAD_TN_Safety_Monitoring_working_in_Safe_Scenario</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PCAD_True_Positive_Safe_Failure" >PCAD_True_Positive_Safe_Failure</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.CogniSafe3D_model.PC_corr_JS_alt_RP_generation" >PC_corr_JS_alt_RP_generation</a>
+</font></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Input Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Input Gate.CogniSafe3D_model.PCAD_TN_or_FN_JS_altered" >PCAD_TN_or_FN_JS_altered</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Predicate</center></B></td><td > <font size="2"><pre><font size="2">
+return((PCAD_True_Negative-&gt;Mark() + JS_altered-&gt;Mark() == 2) || (PCAD_False_Negative-&gt;Mark() + JS_altered-&gt;Mark() == 2));
+
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+JS_altered-&gt;Mark() = 0;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Input Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Input Gate.CogniSafe3D_model.PCAD_TN_or_FN_JS_correct" >PCAD_TN_or_FN_JS_correct</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Predicate</center></B></td><td > <font size="2"><pre><font size="2">
+return((PCAD_True_Negative-&gt;Mark() + JS_correct-&gt;Mark() == 2) || (PCAD_False_Negative-&gt;Mark() + JS_correct-&gt;Mark() == 2));
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+ JS_correct-&gt;Mark() = 0;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Input Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Input Gate.CogniSafe3D_model.Scenario_is_Dangerous" >Scenario_is_Dangerous</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Predicate</center></B></td><td > <font size="2"><pre><font size="2">
+Dangerous_Scenario -&gt; Mark() ==1
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Input Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Input Gate.CogniSafe3D_model.Scenario_is_safe" >Scenario_is_safe</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Predicate</center></B></td><td > <font size="2"><pre><font size="2">
+Safe_Scenario -&gt; Mark() == 1
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Output Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Output Gate.CogniSafe3D_model.Reset_System" >Reset_System</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+Safety_Monitoring_notWorking -&gt; Mark() = 0;
+Safety_Monitoring_working -&gt; Mark() = 0;
+CONTINUE_STATE -&gt; Mark() = 0;
+PCAD_True_Negative -&gt; Mark() = 0;
+PCAD_False_Positive -&gt; Mark() = 0;
+PC_correct -&gt; Mark() = 0;
+SAFE_STATE -&gt; Mark() = 0;
+PCAD_True_Positive -&gt; Mark() = 0;
+JS_correct -&gt; Mark() = 0;
+RP_correct -&gt; Mark() = 0;
+RP_altered -&gt; Mark() = 0;
+JS_altered -&gt; Mark() = 0;
+PC_altered -&gt; Mark() = 0;
+PCAD_False_Negative -&gt; Mark() = 0;
+CW_False_Positive_Misalignment -&gt; Mark() = 0;
+CW_True_Positive_Misalignment -&gt; Mark() = 0;
+CW_True_Negative_Misalignment -&gt; Mark() = 0;
+CATASTROPHIC_STATE -&gt; Mark() = 0;
+
+// token to allow restart
+System_Loaded -&gt; Mark() = 0;
+JS_loaded -&gt; Mark() = 1;
+Safety_Monitoring_loaded -&gt; Mark() = 1;
+PC_generated-&gt;Mark()=1;
+
+//Scenario remains the same for the whole time
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<caption align="Top"><font size="2"><B><font color="red">Range Study Variable Assignments for Study <i><font color="black">RangeStudy_baseline_availability</font></i> in Project <i><font color="blue">CogniSafe3D_project</font></i> </font></B>: </caption>
+<tr><td colspan="8"><font size="2">Run on the copy of <i>CogniSafe3D_model</i> named <i>CogniSafe3D_model_safeScenario</i> (initial marking Safe_Scenario = 1).</font></td></tr>
+<tr ><th width="110" > <font size="2"><B><center>Variable</center></B></th><th width="60" > <font size="2"><B><center>Type</center></B></th><th width="80" > <font size="2"><B><center>Range Type</center></B></th><th width="100" > <font size="2"><B><center>Range</center></B></th><th width="50" > <font size="2"><B><center>Increment</center></B></th><th width="90" > <font size="2"><B><center>Increment Type</center></B></th><th width="70" > <font size="2"><B><center>Function</center></B></th><th width="20" > <font size="2"><B><center>n</center></B></th></tr>
+<tr ><td > <font size="2"><font color="blue">p_CW_correctly_not_detect_misalignment</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Manual</font></td><td > <font size="2"><font color="blue">[0.999, 0.9999, 0.99999, 0.999999, 0.9999999]</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">p_Cobot_Driver_JS_correct_emission</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">0.9999999999877</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">p_LiDAR_PC_correct_emission</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Manual</font></td><td > <font size="2"><font color="blue">[0.99, 0.999, 0.9999, 0.99999, 0.999999, 0.9999999]</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">p_PCAD_correctly_working</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">0.8556</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">p_PC_anomaly_correctly_detected</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">0.8148</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">p_RP_correct_generation_with_PC_and_JS_correct</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Manual</font></td><td > <font size="2"><font color="blue">[0.999, 0.9999, 0.99999, 0.999999, 0.9999999]</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">p_Safety_Monitoring_correctly_working</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Manual</font></td><td > <font size="2"><font color="blue">[0.999, 0.9999, 0.99999, 0.999999, 0.9999999]</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<caption align="Top"><font size="2"><B><font color="red">Range Study Variable Assignments for Study <i><font color="black">RangeStudy_baseline_safety</font></i> in Project <i><font color="blue">CogniSafe3D_project</font></i> </font></B>: </caption>
+<tr><td colspan="8"><font size="2">Run on the copy of <i>CogniSafe3D_model</i> named <i>CogniSafe3D_model_dangerousScenario</i> (initial marking Dangerous_Scenario = 1).</font></td></tr>
+<tr ><th width="110" > <font size="2"><B><center>Variable</center></B></th><th width="60" > <font size="2"><B><center>Type</center></B></th><th width="80" > <font size="2"><B><center>Range Type</center></B></th><th width="100" > <font size="2"><B><center>Range</center></B></th><th width="50" > <font size="2"><B><center>Increment</center></B></th><th width="90" > <font size="2"><B><center>Increment Type</center></B></th><th width="70" > <font size="2"><B><center>Function</center></B></th><th width="20" > <font size="2"><B><center>n</center></B></th></tr>
+<tr ><td > <font size="2"><font color="blue">p_CW_correctly_not_detect_misalignment</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Manual</font></td><td > <font size="2"><font color="blue">[0.999, 0.9999, 0.99999, 0.999999, 0.9999999]</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">p_Cobot_Driver_JS_correct_emission</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">0.9999999999877</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">p_LiDAR_PC_correct_emission</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Manual</font></td><td > <font size="2"><font color="blue">[0.99, 0.999, 0.9999, 0.99999, 0.999999, 0.9999999]</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">p_PCAD_correctly_working</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">0.8556</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">p_PC_anomaly_correctly_detected</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">0.8148</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">p_RP_correct_generation_with_PC_and_JS_correct</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Manual</font></td><td > <font size="2"><font color="blue">[0.999, 0.9999, 0.99999, 0.999999, 0.9999999]</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">p_Safety_Monitoring_correctly_working</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Manual</font></td><td > <font size="2"><font color="blue">[0.999, 0.9999, 0.99999, 0.999999, 0.9999999]</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th colspan="3" > <font size="2">Performance Variable Model: Reward_Availability</th></tr>
+<tr ><td rowspan="3"><font size="2">Top Level Model Information</td><td > <font size="2">Child Model Name</td><td > <font size="2">CogniSafe3D_model_safeScenario</td></tr>
+<tr ><td > <font size="2">Model Type</td><td > <font size="2">SAN Model</td></tr>
+<tr ><td > <font size="2"><i>Note</i></td><td > <font size="2"><i>Same model as CogniSafe3D_model, renamed, with initial marking Safe_Scenario = 1.</i></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th colspan="4" > <font size="2">Performance Variable : safe_state</th></tr>
+<tr ><td rowspan="1"><font size="2">Affecting Models</td><td Colspan="3" > <font size="2">CogniSafe3D_model_safeScenario</td></tr>
+<tr ><td rowspan="1"><font size="2">Impulse Functions</td><td Colspan="3" > <font size="2"></td></tr>
+<tr ><td > <font size="2">Reward Function</td><td Colspan="3" > <font size="2"><i>(Reward is over all Available Models)</i><pre COLS="60" WRAP><font size="1">
+return(CogniSafe3D_model_safeScenario-&gt;SAFE_STATE-&gt;Mark());
+</font></pre>
+</td></tr>
+<tr ><td rowspan="10"><font size="2">Simulator Statistics</td><td > <font size="2">Type</td><td Colspan="2" > <font size="2">Steady State</td></tr>
+<tr ><td rowspan="5"><font size="2">Options</td><td Colspan="2" > <font size="2">Estimate Mean</td></tr>
+<tr ><td Colspan="2" > <font size="2">Include Lower Bound on Interval Estimate</td></tr>
+<tr ><td Colspan="2" > <font size="2">Include Upper Bound on Interval Estimate</td></tr>
+<tr ><td Colspan="2" > <font size="2">Estimate out of Range Probabilities</td></tr>
+<tr ><td Colspan="2" > <font size="2">Confidence Level is Relative</td></tr>
+<tr ><td rowspan="2"><font size="2">Parameters</td><td > <font size="2">Initial Transient</td><td > <font size="2">0.0</td></tr>
+<tr ><td > <font size="2">Batch Size</td><td > <font size="2">1.0</td></tr>
+<tr ><td rowspan="2"><font size="2">Confidence</td><td > <font size="2">Confidence Level</td><td > <font size="2">0.95</td></tr>
+<tr ><td > <font size="2">Confidence Interval</td><td > <font size="2">0.1</td></tr>
+<tr ></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th colspan="3" > <font size="2">Performance Variable Model: Reward_Safety</th></tr>
+<tr ><td rowspan="3"><font size="2">Top Level Model Information</td><td > <font size="2">Child Model Name</td><td > <font size="2">CogniSafe3D_model_dangerousScenario</td></tr>
+<tr ><td > <font size="2">Model Type</td><td > <font size="2">SAN Model</td></tr>
+<tr ><td > <font size="2"><i>Note</i></td><td > <font size="2"><i>Same model as CogniSafe3D_model, renamed, with initial marking Dangerous_Scenario = 1.</i></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th colspan="4" > <font size="2">Performance Variable : catastrophic_state</th></tr>
+<tr ><td rowspan="1"><font size="2">Affecting Models</td><td Colspan="3" > <font size="2">CogniSafe3D_model_dangerousScenario</td></tr>
+<tr ><td rowspan="1"><font size="2">Impulse Functions</td><td Colspan="3" > <font size="2"></td></tr>
+<tr ><td > <font size="2">Reward Function</td><td Colspan="3" > <font size="2"><i>(Reward is over all Available Models)</i><pre COLS="60" WRAP><font size="1">
+return(CogniSafe3D_model_dangerousScenario-&gt;CATASTROPHIC_STATE-&gt;Mark());
+</font></pre>
+</td></tr>
+<tr ><td rowspan="10"><font size="2">Simulator Statistics</td><td > <font size="2">Type</td><td Colspan="2" > <font size="2">Steady State</td></tr>
+<tr ><td rowspan="5"><font size="2">Options</td><td Colspan="2" > <font size="2">Estimate Mean</td></tr>
+<tr ><td Colspan="2" > <font size="2">Include Lower Bound on Interval Estimate</td></tr>
+<tr ><td Colspan="2" > <font size="2">Include Upper Bound on Interval Estimate</td></tr>
+<tr ><td Colspan="2" > <font size="2">Estimate out of Range Probabilities</td></tr>
+<tr ><td Colspan="2" > <font size="2">Confidence Level is Relative</td></tr>
+<tr ><td rowspan="2"><font size="2">Parameters</td><td > <font size="2">Initial Transient</td><td > <font size="2">0.0</td></tr>
+<tr ><td > <font size="2">Batch Size</td><td > <font size="2">1.0</td></tr>
+<tr ><td rowspan="2"><font size="2">Confidence</td><td > <font size="2">Confidence Level</td><td > <font size="2">0.95</td></tr>
+<tr ><td > <font size="2">Confidence Interval</td><td > <font size="2">0.1</td></tr>
+<tr ></tr>
+</font>
+</table>
+<p>
+
+</body>
+<hr>HTML generated by M&#246bius Documentor
+</html>
